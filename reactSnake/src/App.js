@@ -63,7 +63,7 @@ const getIsSnakeOutside = snake =>
   getSnakeHead(snake).x <= 0 ||
   getSnakeHead(snake).y <= 0;
 
-const getIsSnakeClumy = snake =>
+const getIsSnakeClumsy = snake =>
   isSnake(
     getSnakeHead(snake).x,
     getSnakeHead(snake).y,
@@ -175,7 +175,7 @@ const App = () => {
 
   React.useEffect(() => {
     const onTick = () => {
-      getIsSnakeOutside(state.snake) || getIsSnakeClumy(state.snake)
+      getIsSnakeOutside(state.snake) || getIsSnakeClumsy(state.snake)
         ? dispatch({ type: 'GAME_OVER' })
         : dispatch({ type: 'SNAKE_MOVE' });
     };
