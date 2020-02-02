@@ -1,0 +1,65 @@
+
+@font-face 		{
+  font-family: 'Share Tech Mono';
+  src: url('https://n-o-d-e.hashbase.io/fonts/font.eot');
+  }
+
+body, .App, .Index            
+ {letter-spacing: 0.1px; 
+  padding: 0; 
+  margin: 0; 
+  font-family: 'Share Tech Mono', Monospace, Courier; 
+  font-weight: 400; 
+  font-size: 17px; 
+  color: #c8c8c8; 
+  background: rgb(40, 1, 63);}
+
+.Home, .Projects, .App, .Index           
+ {-webkit-font-smoothing: antialiased
+  ;-moz-osx-font-smoothing: grayscale;}
+
+
+@media 			only screen and (max-width: 900px)
+{
+img 			{width: 100%;}
+body			{font-size: 19px;}
+}
+
+.fetchresults{
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px; 
+  padding: 0; 
+  margin: 0; 
+  font-family: 'Share Tech Mono', Monospace, Courier; 
+  font-weight: 200; 
+  font-size: 14px; 
+  color: #c8c8c8; 
+  background: rgb(40, 1, 63);
+  padding: 15px;
+
+
+}
+
+.left{
+  order: 1;
+}
+p, header{
+  font-weight:bold;
+  font-size: 24px;
+
+}
+nav {
+  width: 200px; /* Set a width if you like */
+}
+
+nav a {
+  background-color: black; /* Grey background color */
+  color: #c8c8c8; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 0px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+
