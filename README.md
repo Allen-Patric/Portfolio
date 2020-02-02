@@ -7,7 +7,7 @@ Installation
 
 git clone https://github.com/Allen-Patric/Portfolio.git
 
-cd mtgFetcher/my-app
+cd mtgFetcher/my-app or cd react-snake (Depending on what project you want to check out)
 
 npm install
 
