@@ -1,10 +1,8 @@
-# React Snake (Functional Style)
+##Fully function Snake minigame
 
-## Features
-
-* uses:
-  * only React (create-react-app)
-
+- Use directional keys to move
+- Eat the green square to grow bigger
+- Running into a wall or your own tail is game over!
 ## Installation
 
 * ``
@@ -12,5 +10,3 @@
 * `npm install`
 * `npm start`
 * visit http://localhost:3000/
-
-## Releases
