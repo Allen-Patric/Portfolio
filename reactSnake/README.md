@@ -1,4 +1,4 @@
-##Fully function Snake minigame
+##Fully function Snake minigame coded in react
 
 - Use directional keys to move
 - Eat the green square to grow bigger
