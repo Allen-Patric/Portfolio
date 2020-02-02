@@ -12,7 +12,9 @@ body, .App, .Index
   font-weight: 400; 
   font-size: 17px; 
   color: #c8c8c8; 
-  background: rgb(40, 1, 63);}
+  background: rgb(40, 1, 63);
+  height: 1000px
+}
 
 .Home, .Projects, .App, .Index           
  {-webkit-font-smoothing: antialiased
