@@ -55,25 +55,25 @@ const isSnake = (x, y, snakeCoordinates) =>
   ).length;
 
 const getSnakeHead = snake => snake.coordinates[0];
-
+//slice to grow snake
 const getSnakeWithoutStub = snake =>
   snake.coordinates.slice(0, snake.coordinates.length - 1);
 
 const getSnakeTail = snake => snake.coordinates.slice(1);
-// If snake hits borders
+// If snake hits borders, game over
 const getIsSnakeOutside = snake =>
   getSnakeHead(snake).x >= gridSize ||
   getSnakeHead(snake).y >= gridSize ||
   getSnakeHead(snake).x <= 0 ||
   getSnakeHead(snake).y <= 0;
-// If snake hits itself
+// If snake hits itself, game over
 const getIsSnakeClumsy = snake =>
   isSnake(
     getSnakeHead(snake).x,
     getSnakeHead(snake).y,
     getSnakeTail(snake)
   );
-// If snake eats snack
+// If snake eats snack, increase size of snake by 1 coordinate
 const getIsSnakeEating = ({ snake, snack }) =>
   isPosition(
     getSnakeHead(snake).x,
