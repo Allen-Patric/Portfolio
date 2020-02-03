@@ -1,5 +1,5 @@
 # Portfolio
-Two projects showing my profiency as a React developer. 
+Three projects showing my proficiency as a Full Stack Developer. 
 
 mernTaskList - MERN (MongoDB, ExpressJS, ReactJS, NodeJS) Full stack task list. 
 
