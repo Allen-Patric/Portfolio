@@ -22,13 +22,13 @@
 }
 
 .grid-cell-snake {
-  background-color :black;
+  background-color :green;
 }
 
 .grid-cell-snack {
-  background-color: green;
+  content:url(https://www.jing.fm/clipimg/full/121-1217819_8-bit-clipart-pac-man-8-bit-pacman.png);
 }
 
 .grid-cell-hit {
-  background-color: red;
+  content:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRo7iLMUDgE9LfzUUzBCjgL25EoQv982H3cUhuBQxqp7cqdZ_GW);
 }

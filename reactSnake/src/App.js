@@ -3,15 +3,19 @@ import cs from 'classnames';
 
 import './App.css';
 
+// Travel speed of the Snake
 const speed = 75;
-const GRID_SIZE = 25;
-const GRID = [];
 
-for (let i = 0; i <= GRID_SIZE; i++) {
-  GRID.push(i);
+// Size of the game and number of squares
+const gridSize = 25;
+
+const grid = [];
+
+for (let i = 0; i <= gridSize; i++) {
+  grid.push(i);
 }
-
-const DIRECTIONS = {
+// Setting snakes direction of grid travel
+const directions = {
   UP: 'UP',
   BOTTOM: 'BOTTOM',
   RIGHT: 'RIGHT',
@@ -24,8 +28,8 @@ const DIRECTION_TICKS = {
   RIGHT: (x, y) => ({ x: x + 1, y }),
   LEFT: (x, y) => ({ x: x - 1, y }),
 };
-
-const KEY_CODES_MAPPER = {
+// Mapping directional keys to control the snakes direction
+const controls = {
   38: 'UP',
   39: 'RIGHT',
   37: 'LEFT',
@@ -34,14 +38,14 @@ const KEY_CODES_MAPPER = {
 
 const getRandomNumberFromRange = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
-
+// Randomly generates Snakes spawn position and snacks position after eaten 
 const getRandomCoordinate = () => ({
-  x: getRandomNumberFromRange(1, GRID_SIZE - 1),
-  y: getRandomNumberFromRange(1, GRID_SIZE - 1),
+  x: getRandomNumberFromRange(1, gridSize - 1),
+  y: getRandomNumberFromRange(1, gridSize - 1),
 });
 
 const isBorder = (x, y) =>
-  x === 0 || y === 0 || x === GRID_SIZE || y === GRID_SIZE;
+  x === 0 || y === 0 || x === gridSize || y === gridSize;
 
 const isPosition = (x, y, diffX, diffY) => x === diffX && y === diffY;
 
@@ -56,20 +60,20 @@ const getSnakeWithoutStub = snake =>
   snake.coordinates.slice(0, snake.coordinates.length - 1);
 
 const getSnakeTail = snake => snake.coordinates.slice(1);
-
+// If snake hits borders
 const getIsSnakeOutside = snake =>
-  getSnakeHead(snake).x >= GRID_SIZE ||
-  getSnakeHead(snake).y >= GRID_SIZE ||
+  getSnakeHead(snake).x >= gridSize ||
+  getSnakeHead(snake).y >= gridSize ||
   getSnakeHead(snake).x <= 0 ||
   getSnakeHead(snake).y <= 0;
-
+// If snake hits itself
 const getIsSnakeClumsy = snake =>
   isSnake(
     getSnakeHead(snake).x,
     getSnakeHead(snake).y,
     getSnakeTail(snake)
   );
-
+// If snake eats snack
 const getIsSnakeEating = ({ snake, snack }) =>
   isPosition(
     getSnakeHead(snake).x,
@@ -140,10 +144,10 @@ const reducer = (state, action) => {
       throw new Error();
   }
 };
-
+// Game starts with snake moving right, Can't start game immediatley dead
 const initialState = {
   playground: {
-    direction: DIRECTIONS.RIGHT,
+    direction: directions.RIGHT,
     isGameOver: false,
   },
   snake: {
@@ -156,12 +160,12 @@ const initialState = {
 
 const App = () => {
   const [state, dispatch] = React.useReducer(reducer, initialState);
-
+// Handling directional inputs
   const onChangeDirection = event => {
-    if (KEY_CODES_MAPPER[event.keyCode]) {
+    if (controls[event.keyCode]) {
       dispatch({
         type: 'SNAKE_CHANGE_DIRECTION',
-        direction: KEY_CODES_MAPPER[event.keyCode],
+        direction: controls[event.keyCode],
       });
     }
   };
@@ -172,7 +176,7 @@ const App = () => {
     return () =>
       window.removeEventListener('keyup', onChangeDirection, false);
   }, []);
-
+// Each tick checks state of Snake, if game over or still moving
   React.useEffect(() => {
     const onTick = () => {
       getIsSnakeOutside(state.snake) || getIsSnakeClumsy(state.snake)
@@ -187,6 +191,7 @@ const App = () => {
 
   return (
     <div className="app">
+      
       <h1>Game Over = Hire me</h1>
       <Grid
         snake={state.snake}
@@ -199,7 +204,7 @@ const App = () => {
 
 const Grid = ({ isGameOver, snake, snack }) => (
   <div>
-    {GRID.map(y => (
+    {grid.map(y => (
       <Row
         y={y}
         key={y}
@@ -213,7 +218,7 @@ const Grid = ({ isGameOver, snake, snack }) => (
 
 const Row = ({ isGameOver, snake, snack, y }) => (
   <div className="grid-row">
-    {GRID.map(x => (
+    {grid.map(x => (
       <Cell
         x={x}
         y={y}
