@@ -3,9 +3,10 @@ MERN Full Stack Task List
 ### Development
 
 1. Install MongoDB and run on default port `27017`
-2. `npm install` in both root directory and `client` directory
-3. `npm start` in both root directory and `client` directory
-4. Head to [localhost:3000](http://localhost:3000) to see the 'My Tasks' app
+2. `cd Portfolio\mernTaskList` 
+3. `npm install` in both root directory and `client` directory
+4. `npm start` in both root directory and `client` directory
+5. Head to [localhost:3000](http://localhost:3000) to see the 'My Tasks' app
 
 ### Production
 
