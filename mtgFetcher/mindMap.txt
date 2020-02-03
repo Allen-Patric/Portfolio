@@ -1,0 +1,39 @@
+
+------ Features ------
+
+SPA application utilizing router, 3-4 Links. 
+
+Home page describing website features
+
+Fetch function that returns a card from Scryfalls API data base
+
+Return random card page?
+
+About me page 
+
+
+------- Components ------
+
+Home Page 
+
+
+Fetch page
+    Axios GET request
+    Changes GET URL with user input value
+    Returns card IMG and oracle text 
+
+About Page
+
+CSS Styling
+
+
+-------- Styling --------
+
+Horizontal NAV bar at top of page with links.
+    Dark purple and white color palette 
+
+Fetch
+    Search bar top left
+    Card IMG on left and other card information on the right
+
+
