@@ -1,15 +1,6 @@
 # Portfolio
-My portfolio pieces, intended to show recruiters my coding abilities. 
+Two projects showing my profiency as a Full Stack Engineer. 
 
-Installation 
+mtgFetcher - Full stack App utilizing Scryfall's API data base to return any card out of Magic the GAtherings 18,000 card collection.
 
-------
-
-git clone https://github.com/Allen-Patric/Portfolio.git
-
-cd mtgFetcher/my-app or cd react-snake (Depending on what project you want to check out)
-
-npm install
-
-npm start
-
+react-snake - Snake mini game coded entirely in React. 
