@@ -6,7 +6,7 @@
 ## Installation
 
 * ``
-* `cd react-snake`
+* `cd Portfolio/reactSnake`
 * `npm install`
 - `npm start`
 - `visit http://localhost:3000/`
