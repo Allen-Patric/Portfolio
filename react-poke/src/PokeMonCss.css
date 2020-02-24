@@ -1,0 +1,152 @@
+.pokename-2 {
+  font-family: Druk-Med;
+  font-size: 60px;
+  margin-left: 300px;
+  text-decoration: none;
+  color: #ffca08;
+  text-transform: capitalize;
+  margin-top: -121px;
+}
+
+/* .height-bg {
+  background-color: aquamarine;
+  height: 200px;
+  width: 100px;
+} */
+
+.height {
+  font-family: Druk-Med;
+  font-size: 30px;
+  color: #ffca08;
+  margin-left: 936px;
+  margin-top: -104px;
+}
+
+.weight {
+  font-family: Druk-Med;
+  font-size: 30px;
+  color: #ffca08;
+  margin-left: 936px;
+
+  margin-top: -16px;
+}
+
+.stat-poke {
+  font-family: Druk-Med;
+  font-size: 30px;
+  margin-left: 48px;
+  color: #ffca08;
+  margin-top: 61px;
+  display: relative;
+}
+
+.abilities {
+  font-family: Druk-Med;
+  font-size: 30px;
+  margin-top: -242px;
+  color: #ffca08;
+  margin-left: 935px;
+  /* margin-bottom: 200px; */
+}
+
+.abilities-text {
+  font-family: Druk-Med;
+  font-size: 20px;
+  margin-top: 0px;
+  color: #2dd5ff;
+  margin-left: 935px;
+  margin-bottom: 200px;
+}
+
+.moves {
+  font-family: Druk-Med;
+  font-size: 30px;
+  margin-left: 40px;
+  color: #ffca08;
+  margin-top: 28px;
+}
+
+.moves-cont {
+  font-family: Druk-Med;
+  font-size: 20px;
+  margin-left: 40px;
+  color: #49c6e5;
+  display: grid;
+  grid-template-columns: repeat(4, 282px);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.border-hor {
+  border-bottom: 2px solid #2dd5ff;
+  margin-top: 47px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.border-hor-2 {
+  border-bottom: 2px solid #2dd5ff;
+  margin-top: -30px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+}
+
+.border-vert {
+  border-right: 2px solid #2dd5ff;
+
+  margin-top: -134px;
+  margin-bottom: 27px;
+  margin-left: 893px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  height: 132px;
+  display: inline-block;
+}
+
+.border-vert-2 {
+  border-right: 2px solid #2dd5ff;
+  margin-top: -82px;
+  margin-bottom: 27px;
+  margin-left: 893px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  height: 267px;
+  display: inline-block;
+}
+
+.stat-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 100px 100px;
+  margin-left: 20px;
+}
+
+.stats {
+  font-family: Druk-Med;
+  font-size: 20px;
+  margin-left: 27px;
+  margin-top: -13px;
+  color: #2dd5ff;
+}
+
+.container-2 {
+  /* background-color: #e8e0d2; */
+  height: 69px;
+  width: 895px;
+  position: flex;
+  margin-top: -65px;
+}
+
+.body-2 {
+  margin-top: 80px;
+  background-color: #3468b3;
+  height: 468px;
+}
+
+.moves-body {
+  background-color: #07224d;
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 40px;
+}

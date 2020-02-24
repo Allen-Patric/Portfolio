@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Druk-Med;
+  src: url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.woff");
+}
+
+.pokename {
+  font-family: Druk-Med;
+  font-size: 60px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #ffca08;
+  margin-top: -24px;
+  margin-bottom: 24px;
+}
+
+.navigation {
+  font-size: 15px;
+  width: 100vw;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #1993d1;
+  opacity: 1;
+  z-index: 3;
+  list-style-type: none;
+  margin: 0;
+  top: 0;
+  position: fixed;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 38px;
+}
+
+.body {
+  background-color: #07224d;
+  height: 100%;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.border-wid {
+  border-bottom: 2px solid #2dd5ff;
+  /* margin-top: 47px; */
+  margin-left: 0px;
+  margin-right: 0px;
+}
