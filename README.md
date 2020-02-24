@@ -7,3 +7,4 @@ mtgFetcher - React API site utilizing Scryfall's API data base to return any car
 
 react-snake - Snake mini game coded entirely in React. ( live demo: http://snakeinreact.surge.sh/ )
 
+react-poke - Group project utilizing Pokemon API
