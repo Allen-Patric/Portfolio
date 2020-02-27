@@ -5,6 +5,8 @@ import PokePick from "./PokePick.js";
 import PokeMon from "./PokeMon.js";
 import { withRouter } from "react-router-dom";
 import { Link, Switch, Route } from "react-router-dom";
+import Home from './Home.js';
+import PokemonFavorites from './PokemonFavorites.js'
 
 function App(props) {
   //<>
@@ -19,17 +21,52 @@ function App(props) {
 
   return (
     <div className="main-container">
-      <PokePick name={props.name} height={props.height} />
+
+      
+        
+      <nav>
+          <ul>
+          <li>
+        <Link to='/'>Home</Link>
+        <br></br>
+          </li>
+          <li>
+        <Link to='/pokemon'>Pokemon Inventory</Link>
+        <br></br>
+          </li>
+          <li>
+        <Link to='/favorites'>Pokemon Favorites</Link>
+        <br></br>
+          </li>
+        </ul>
+        </nav>
+  
       <Switch>
-        <Route exact path="/" render={() => <PokeCard />} />
+
+      <Route exact path='/'>
+
+        <Home/>
+
+      </Route>
+
+      <Route exact path="/pokemon" render={() => <PokeCard />} />
         <Route
           exact
           path="/pokemon/:name"
           render={rProps => <PokeMon {...rProps} />}
         />
+
+    <Route path='/favorites'>
+
+        <PokemonFavorites state={this.state}/>
+
+    </Route>
+
       </Switch>
+
     </div>
   );
 }
 
 export default withRouter(App);
+
