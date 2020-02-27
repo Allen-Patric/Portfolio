@@ -11,7 +11,8 @@ function PokeMon(props) {
     abilities: [],
     moves: [],
     sprites: [],
-    stats: []
+    stats: [],
+    favorites: [],
   });
   console.log("0000", props.match.params);
   useEffect(() => {
@@ -53,6 +54,10 @@ function PokeMon(props) {
       </div>
     );
   });
+  /*const addFavorites = favorite => {
+    On click, will add the {poke.name} to "favorites:[]" state, displayed in PokemonFavorites.js render. 
+
+  }*/
 
   return (
     <div>
@@ -74,6 +79,7 @@ function PokeMon(props) {
         />
         <h1 className="pokename-2"> {poke.name}</h1>
         <div className="height-bg">
+        <button> Favorite Pokemon! </button>
           <h1 className="height">Height:{poke.height}</h1>
           <h1 className="weight">Weight:{poke.weight}</h1>
           <div class="border-hor"></div>
