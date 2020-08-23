@@ -1,8 +1,7 @@
+Highlighted in my portfolio is a fully functional Instagram Clone created by utilizing the MERN stack. 
+
 link: https://reactinstaclone96.herokuapp.com/signin
 
-A fully functional Instagram Clone created by utilizing the MERN stack. 
-
-  
 
 Features - 
 
